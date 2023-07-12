@@ -1,0 +1,86 @@
+div {
+  width: 30vw;
+  height: 40vw;
+  margin-top: 10px;
+}
+
+.burger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  perspective: 300px;
+}
+
+div:not(:hover),
+.burger>div {
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.burger:hover>div {
+  margin-bottom: 1vh;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  transform: translate3d(0, 0, 50px);
+}
+
+.bun-top {
+  height: 15%;
+  border-radius: 90px 90px 10px 10px;
+  background-color: #A27732;
+  border-top: 9px solid #906725;
+}
+
+.lettuce {
+  border-radius: 8px;
+  background-color: #80D041;
+  height: 3%;
+  border-bottom: 3px solid #0F6D12;
+}
+
+.tomato {
+  border-radius: 14px;
+  background-color: #F13233;
+  height: 3%;
+  border-bottom: 5px solid #940C0E;
+}
+
+.cheese {
+  background-color: #E8EA02;
+  border-radius: 10px;
+  height: 4%;
+  border-bottom: 5px solid #EAB902;
+}
+
+.beef {
+  border-radius: 15px;
+  background-color: #603102;
+  height: 8%;
+  border-bottom: 16px solid #402408;
+}
+
+.patty {
+  border-radius: 8px;
+  background-color: #E7B985;
+  height: 5%;
+  border-bottom: 4px solid #da9e5a;
+}
+
+.bun-bottom {
+  background-color: #A27732;
+  border-radius: 10px 10px 50px 50px;
+  height: 10%;
+  border-bottom: 11px solid #906725;
+}
+
+@media (max-width: 650px) {
+  div {
+    width: 70%;
+    height: 40%;
+  }
+}
